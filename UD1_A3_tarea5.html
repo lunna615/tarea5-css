@@ -107,7 +107,7 @@
 
         /* Ningún texto de enlace debe estar subrayado */
 
-        a{
+        a {
             text-decoration: none;
         }
 
@@ -137,6 +137,37 @@
             text-align: justify;
         }
 
+        /* Todos los enlaces internos deben visualizarse en color grey cuando no están visitados*/
+
+        a {
+            color: grey;
+        }
+
+        /* y maroon cuando ya se han visitado. */
+
+        a:visited {
+            color: maroon;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        /* los enlaces del menú: deben verse color chocolate al mantener pinchado el ratón*/
+
+        nav ul li a:active {
+            color: chocolate;
+        }
+
+        /* y al pasar por encima el ratón debe verse el fondo blueviolet, letra blanca, más grande y todo en mayúsculas.*/
+    
+        nav ul li a:hover {
+            background: blueviolet;
+            color: white;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+        
     </style>
 </head>
 
